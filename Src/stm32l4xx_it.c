@@ -71,6 +71,10 @@ void SysTick_Handler(void)
 /**
 * @brief This function handles TIM3 global interrupt.
 */
+
+/* Ez a Timer3 interrupt request handler-e: az itt található kód fut le akkor, ha a Timer IT-ot generál.
+ * HAL_TIM_IRQHandler() fv. törli az IT-t kérést, a HAL_GPIO_TogglePin() pedig negálja a led pint. 
+ */
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
