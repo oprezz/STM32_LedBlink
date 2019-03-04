@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp --branchpatch=sdcomp-29491-629360
+"ledblink_01\startup_stm32l476xx.o"
+"ledblink_01\main.o"
+"ledblink_01\stm32l4xx_it.o"
+"ledblink_01\stm32l4xx_hal_msp.o"
+"ledblink_01\stm32l4xx_hal_tim.o"
+"ledblink_01\stm32l4xx_hal_tim_ex.o"
+"ledblink_01\stm32l4xx_hal.o"
+"ledblink_01\stm32l4xx_hal_i2c.o"
+"ledblink_01\stm32l4xx_hal_i2c_ex.o"
+"ledblink_01\stm32l4xx_hal_rcc.o"
+"ledblink_01\stm32l4xx_hal_rcc_ex.o"
+"ledblink_01\stm32l4xx_hal_flash.o"
+"ledblink_01\stm32l4xx_hal_flash_ex.o"
+"ledblink_01\stm32l4xx_hal_flash_ramfunc.o"
+"ledblink_01\stm32l4xx_hal_gpio.o"
+"ledblink_01\stm32l4xx_hal_dma.o"
+"ledblink_01\stm32l4xx_hal_dma_ex.o"
+"ledblink_01\stm32l4xx_hal_pwr.o"
+"ledblink_01\stm32l4xx_hal_pwr_ex.o"
+"ledblink_01\stm32l4xx_hal_cortex.o"
+"ledblink_01\system_stm32l4xx.o"
+--library_type=microlib --strict --scatter "ledblink_01\ledblink_01.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledblink_01.map" -o ledblink_01\ledblink_01.axf
